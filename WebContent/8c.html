@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BootStrap Project</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <!-- <link href="dist/css/bootstrap.css" rel="stylesheet"> -->
+    
+  <!--  <link href="booststrap/css/bootstrap.min.css" rel="stylesheet">  -->
+   <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+  <!--  <link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <!--  <script src="/scripts/jquery.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+  
+   
+    <style>
+   
+    span
+    {
+    color:black;
+    }
+    
+   .dropdown-toggle
+    {
+      font-size:16px;
+      color: white;
+    }
+    .active
+    {
+      font-size:16px;
+    }
+    .modal
+    {
+      max-height: 65%;
+    }
+   body{
+    background-image: url('Untitled.jpg');
+    background-repeat: repeat-x;
+   }
+   .firstimg
+    {
+      width:200px;
+      height: 250px;
+    }
+    </style>
+
+    </head>
+<body>
+<a href="logn.html" class="btn btn-danger" style="position:fixed; float:right; right:0px; top:0px">Log Out</a>
+
+<div id="example" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="child/6.jpg" align="left"  hspace="20"><h3>Title: The Wrigley Riddle
+ </h3><br><h3>Author: David A. Kelly </h3><br><h3>Rating: 4.03/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+             
+            </div>
+          </div>
+
+
+    <div class="container main-container">
+   <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-nav">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    </div>
+     <div class="collapse navbar-collapse top-nav">
+        <a class="navbar-brand" href="#">Book Rating System</a>
+        
+         
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              
+  <input type="search" id="txtList"
+   placeholder="Search by Title" list="months" />
+  <datalist id="months">
+   <option value="Sandwalk Adventures">
+   <option value="Heidi Heckelbeck has a Secret">
+   <option value="Autumn Falling Leaves Fairy">
+   <option value="Nancy Clancy Sees the Future">
+   <option value="Show me the Honey">
+   <option value="Amelia Bedelia Means Business">
+   <option value="The Sasquatch Escape">
+   <option value="The Wrigley Riddle">
+   <option value="The Meanest Birthday Girl">
+   <option value="The Clan of the Scorpion">
+   <option value="The Kicks Sabotage Season">
+   <option value="I Funny">
+   <option value="Fifty Shaeds of Grey">
+   <option value="Dark Witch">
+   <option value="The Unidentified Redhead">
+   <option value="Everything for Us">
+   <option value="Beautiful Disaster">
+   <option value="The Wrong Billionaires Bed">
+   <option value="The Sum of all Kisses">
+   <option value="After the Kiss">
+   <option value="Christmas on 4th Street">
+   <option value="Secret Shared">
+   <option value="If I Were You">
+   <option value="A Cold Creek Christmas Surprise">
+   <option value="Enders Game">
+   <option value="Star Wars Raven">
+   <option value="A Feast of Dragons">
+   <option value="A Dance with Dragons">
+   <option value="Halo Grasslands">
+   <option value="The Blinding Knife">
+   <option value="The Drawing of the Three">
+   <option value="Hitchhikers Guide to the Galaxy">
+   <option value="The Third Kingdom">
+   <option value="Foundation">
+   <option value="The Great Hunt">
+   <option value="Star Trek the Fall The Poisoned Chalice">
+  </datalist>
+              <!--<input type="text" placeholder="Email" class="form-control">-->
+            </div>
+            <div class="form-group">
+             <!-- <input type="password" placeholder="Password" class="form-control">-->
+            </div>
+            <button type="submit" id="thebutton" class="btn btn-success">Search</button>
+          </form>
+       
+      </div>
+    </nav>
+
+
+    
+        <div id="navbarExample" class="navbar navbar-static">  
+            <div class="navbar-inner">  
+              <div class="container" style="width: auto;">  
+                  
+                <ul class="nav">  
+                  <li class="active" ><a href="indexold.html">Home</a></li>
+                  <li class="dropdown">  
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="color:white">Browse by Genre</span><b class="caret"></b></a>  
+                    <ul class="dropdown-menu">  
+                      <li class=""><a href="2.html">Children</a></li>  
+                      <li class=""><a href="3.html">Romance</a></li>  
+                     <li class=""><a href="4.html">Science</a></li>  
+                    </ul>  
+                  </li>  
+                </ul> 
+           <!--   <form class="navbar-form navbar-right">
+              <input type="search" placeholder="Search for a Book" class="form-control">
+              </form> -->
+              </div>  
+            </div>  
+          </div>
+    
+    
+           
+           
+          <h2><span style = "font-family:cambria">The Wrigley Riddle</span></h2><br>           
+          <a data-toggle="modal" href="#example" id="img1"><img class="center" src="children_images/6.jpg" align="middle"  />
+             
+             
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+</script>
+
+
+<!--<script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  -->
+<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>  
+
+<script src="valid.js"></script>
+<script src="drop.js"></script>
+
+
+
+</body>
+</html>

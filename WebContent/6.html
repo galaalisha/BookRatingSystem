@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>BootStrap Project</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!-- <link href="dist/css/bootstrap.css" rel="stylesheet"> -->
+    
+  <!--  <link href="booststrap/css/bootstrap.min.css" rel="stylesheet">  -->
+   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+  <!--  <link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <!--  <script src="/scripts/jquery.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+  
+   
+    <style>
+   
+    span
+    {
+    color:black;
+    }
+    
+   .dropdown-toggle
+    {
+      font-size:16px;
+      color: white;
+    }
+    .active
+    {
+      font-size:16px;
+    }
+    .modal
+    {
+      max-height: 65%;
+    }
+   body{
+    background-image: url('Untitled.jpg');
+    background-repeat: repeat-x;
+   }
+   .firstimg
+    {
+      width:200px;
+      height: 250px;
+    }
+    </style>
+
+    </head>
+<body>
+
+<div id="example" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>This is a Modal Heading</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="C:\Users\Alisha\Desktop\bootstrap all\bootstrap\1-001.jpg" align="left"  hspace="20">   njfdk<br>hiod
+            </div>
+            <div class="modal-footer">
+              <a href="#" class="btn btn-success">Call to action</a>
+              <a href="#" class="btn" data-dismiss="modal">Close</a>
+            </div>
+          </div>
+
+
+    <div class="container main-container">
+   <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-nav">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    </div>
+     <div class="collapse navbar-collapse top-nav">
+        <a class="navbar-brand" href="#">Book Rating System</a>
+        
+         
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              
+  <input type="search" id="txtList"
+   placeholder="Search by Title" list="months" />
+  <datalist id="months">
+   <option value="January">
+   <option value="February">
+   <option value="March">
+   <option value="April">
+   <option value="May">
+   <option value="June">
+   <option value="July">
+
+   <option value="August">
+   <option value="September">
+   <option value="October">
+   <option value="November">
+   <option value="December">
+  </datalist>
+              <!--<input type="text" placeholder="Email" class="form-control">-->
+            </div>
+            <div class="form-group">
+             <!-- <input type="password" placeholder="Password" class="form-control">-->
+            </div>
+            <button type="submit" id="thebutton" class="btn btn-success">Search</button>
+          </form>
+       
+      </div>
+    </nav>
+
+
+    
+        <div id="navbarExample" class="navbar navbar-static">  
+            <div class="navbar-inner">  
+              <div class="container" style="width: auto;">  
+                  
+                <ul class="nav">  
+                  <li class="active" ><a href="index2.html">Home</a></li>
+                  <li class="dropdown">  
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="color:white">Browse by Genre</span><b class="caret"></b></a>  
+                    <ul class="dropdown-menu">  
+                      <li class=""><a href="2.html">Children</a></li>  
+                      <li class=""><a href="3.html">Romance</a></li>  
+                     <li class=""><a href="4.html">Science</a></li>  
+                    </ul>  
+                  </li>  
+                </ul> 
+           <!--   <form class="navbar-form navbar-right">
+              <input type="search" placeholder="Search for a Book" class="form-control">
+              </form> -->
+              </div>  
+            </div>  
+          </div>
+    
+    
+           
+           
+          <h2><span style = "font-family:cambria">Sandwalk Adventure by Jay Hosler</span></h2><br>           
+          <a data-toggle="modal" href="#example" id="img1"><img class="center" src="C:\Users\Alisha\Desktop\bootstrap all\bootstrap\1-001.jpg" align="middle"  />
+             
+             
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+</script>
+<script type="text/javascript">
+var button = document.getElementById("thebutton");
+button.onclick = function ()  {
+    if(document.getElementById('txtList').value=="January"){
+    window.location.href="C:/Users/Alisha/Desktop/bootstrap all/bootstrap/4.html";
+    return false;
+   }
+    else if(document.getElementById('txtList').value=="February"){
+    window.location.href="C:/Users/Alisha/Desktop/bootstrap all/bootstrap/3.html";
+    return false;
+   }    
+   else if(document.getElementById('txtList').value=="March"){
+    window.location.href="C:/Users/Alisha/Desktop/bootstrap all/bootstrap/modal2.html";
+    return false;
+   }    
+};
+</script>
+
+<!--<script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  -->
+<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>  
+
+<script>
+
+// Find all inputs on the DOM which are bound to a datalist via their list attribute.
+var inputs = document.querySelectorAll('input[list]');
+for (var i = 0; i < inputs.length; i++) {
+  // When the value of the input changes...
+  inputs[i].addEventListener('change', function() {
+    var optionFound = false,
+      datalist = this.list;
+    // Determine whether an option exists with the current value of the input.
+    for (var j = 0; j < datalist.options.length; j++) {
+        if (this.value == datalist.options[j].value) {
+            optionFound = true;
+            break;
+        }
+    }
+    // use the setCustomValidity function of the Validation API
+    // to provide an user feedback if the value does not exist in the datalist
+    if (optionFound) {
+       this.setCustomValidity('');
+    } else {
+      this.setCustomValidity('This book does not exist in our database');
+    }
+  });
+}
+
+/*function listt(){
+for (var j = 0; j < datalist.options.length; j++) {
+    if (document.getElementById('txtList')[j] != datalist.options[j].value) 
+    {
+      alert("error");
+      return false;
+    }
+    return true;
+}
+}*/
+</script>
+
+
+
+</body>
+</html>

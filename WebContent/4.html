@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap Project</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  <!-- <link href="dist/css/bootstrap.css" rel="stylesheet"> -->
+    
+  <!--  <link href="booststrap/css/bootstrap.min.css" rel="stylesheet">  -->
+   <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+  <!--  <link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <!--  <script src="/scripts/jquery.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+  
+   
+    <style>
+     .modal
+    {
+      max-height: 61%;
+    }
+    .dropdown-toggle
+    {
+      font-size:16px;
+      color: white;
+    }
+    .active
+    {
+      font-size:16px;
+    }
+    .firstimg
+    {
+      width:200px;
+      height: 250px;
+    }
+    span
+    {
+    color:black;
+    }
+    .scrollspy-example
+    {
+     height: 1200px;
+     overflow: auto;
+     position: relative;
+    }
+  
+      body
+    {
+      background-image:url('Untitled.jpg');
+      background-repeat: repeat-x;
+
+    }
+   
+    </style>
+    </head>
+<body>
+  <div id="example" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/1.jpg" align="left"  hspace="20"> <h3>Title: Ender's Game</h3><br><h3>Author: Orson Scott Card</h3><br><h3>Rating: 3.67/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+
+<div id="example2" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/2.jpg" align="left"  hspace="20"> <h3>Title:  Revan (Star Wars: The Old Republic)
+ </h3><br><h3>Author: Drew Karpyshyn</h3><br><h3>Rating: 3.87/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+              
+            </div>
+          </div>
+
+<div id="example3" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/10.jpg" align="left"  hspace="20">    <h3>Title: A Feast of Dragons</h3><br><h3>Author: Morgan Rice</h3><br><h3>Rating: 3.71/5</h3>
+            </div>
+            <div class="modal-footer">
+           <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+<div id="example4" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/11.jpg" align="left"  hspace="20"> <h3>Title: A Dance with Dragons </h3><br><h3>Author: George R.R. Martin</h3><br><h3>Rating: 4.23/5</h3>
+            </div>
+            <div class="modal-footer">
+               <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+
+ <div id="example5" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/3.jpg" align="left"  hspace="20"> <h3>Title: Halo: Glasslands </h3><br><h3>Author: Karen Traviss</h3><br><h3>Rating: 4.06/5</h3>
+                        </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+  <div id="example6" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/4.jpg" align="left"  hspace="20"> <h3>Title: The Blinding Knife</h3><br><h3>Author: Brent Weeks</h3><br><h3>Rating: 4.46/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+  <div id="example7" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/5.jpg" align="left"  hspace="20"> <h3>Title: The Drawing of the Three
+</h3><br><h3>Author: Stephen King</h3><br><h3>Rating: 4.19/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+ <div id="example8" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/6.jpg" align="left"  hspace="20"> <h3>Title: The Hitchhikers Guide to the Galaxy Live
+ </h3><br><h3>Author: Douglas Adams</h3><br><h3>Rating: 4.09/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+ <div id="example9" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/7.jpg" align="left"  hspace="20"> <h3>Title: The Third Kingdom</h3><br><h3>Author: Terry Goodkind</h3><br><h3>Rating: 3.84/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+ <div id="example10" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/8.jpg" align="left"  hspace="20"> <h3>Title: Foundation</h3><br><h3>Author: Isaac Asimov</h3><br><h3>Rating: 4.03/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+ <div id="example11" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>This is a Modal Heading</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/9.jpg" align="left"  hspace="20"> <h3>Title:  The Great Hunt (Wheel of Time)
+ </h3><br><h3>Author: Robert Jordan</h3><br><h3>Rating: 4.16/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+ <div id="example12" class="modal fade " style="display: none; ">
+            <div class="modal-header">
+              <a class="close" data-dismiss="modal">×</a>
+              <h3>Book Description</h3>
+            </div>
+            <div class="modal-body">
+            <img class="firstimg" src="science_images/12.jpg" align="left"  hspace="20"> <h3>Title: Star Trek: The Fall (The Poisoned Chalice) </h3><br><h3>Author: Jake Swallow</h3><br><h3>Rating: 4.40/5</h3>
+            </div>
+            <div class="modal-footer">
+              <a href="formtb.html" class="btn btn-success">Write a Review</a>
+           
+            </div>
+          </div>
+          
+  <div class="container main-container">
+   <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-nav">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    </div>
+     <div class="collapse navbar-collapse top-nav">
+        <a class="navbar-brand" href="#">Book Rating System</a>
+        
+         
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              
+  <input type="search" id="txtList"
+   placeholder="Search by Title" list="months" />
+  <datalist id="months">
+  <option value="Sandwalk Adventures">
+   <option value="Heidi Heckelbeck has a Secret">
+   <option value="Autumn Falling Leaves Fairy">
+   <option value="Nancy Clancy Sees the Future">
+   <option value="Show me the Honey">
+   <option value="Amelia Bedelia Means Business">
+   <option value="The Sasquatch Escape">
+   <option value="The Wrigley Riddle">
+   <option value="The Meanest Birthday Girl">
+   <option value="The Clan of the Scorpion">
+   <option value="The Kicks Sabotage Season">
+   <option value="I Funny">
+   <option value="Fifty Shaeds of Grey">
+   <option value="Dark Witch">
+   <option value="The Unidentified Redhead">
+   <option value="Everything for Us">
+   <option value="Beautiful Disaster">
+   <option value="The Wrong Billionaires Bed">
+   <option value="The Sum of all Kisses">
+   <option value="After the Kiss">
+   <option value="Christmas on 4th Street">
+   <option value="Secret Shared">
+   <option value="If I Were You">
+   <option value="A Cold Creek Christmas Surprise">
+   <option value="Enders Game">
+   <option value="Star Wars Raven">
+   <option value="A Feast of Dragons">
+   <option value="A Dance with Dragons">
+   <option value="Halo Grasslands">
+   <option value="The Blinding Knife">
+   <option value="The Drawing of the Three">
+   <option value="Hitchhikers Guide to the Galaxy">
+   <option value="The Third Kingdom">
+   <option value="Foundation">
+   <option value="The Great Hunt">
+   <option value="Star Trek the Fall The Poisoned Chalice">
+  </datalist>
+              <!--<input type="text" placeholder="Email" class="form-control">-->
+            </div>
+            <div class="form-group">
+             <!-- <input type="password" placeholder="Password" class="form-control">-->
+            </div>
+            <button type="submit" id="thebutton" class="btn btn-success">Search</button>
+          </form>
+       
+      </div>
+    </nav>
+
+
+    
+        <div id="navbarExample" class="navbar navbar-static">  
+            <div class="navbar-inner">  
+              <div class="container" style="width: auto;">  
+                  
+                <ul class="nav">  
+                  <li class="active" ><a href="indexold.html">Home</a></li>
+                  <li class="dropdown">  
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span style="color:white">Browse by Genre</span><b class="caret"></b></a>  
+                    <ul class="dropdown-menu">  
+                      <li class=""><a href="2.html">Children</a></li>  
+                      <li class=""><a href="3.html">Romance</a></li>  
+                     <li class=""><a href="4.html">Science</a></li>  
+                    </ul>  
+                  </li>  
+                </ul> 
+           <!--   <form class="navbar-form navbar-right">
+              <input type="search" placeholder="Search for a Book" class="form-control">
+              </form> -->
+              </div>  
+            </div>  
+          </div>
+           
+          
+        
+          
+           <h2 id="it"><span style = "font-family:cambria">Science</span></h2><br>  
+           <div class="rows">
+             <div class="col-lg-3">
+             <a data-toggle="modal" href="#example" id="img1"><img class="firstimg" src="science_images/1.jpg" />
+             </div>
+             <div class="col-lg-3">        
+             <a data-toggle="modal" href="#example2" id="img1"><img class="firstimg" src="science_images/2.jpg"  /> 
+             </div>
+             <div class="col-lg-3">  
+             <a data-toggle="modal" href="#example3" id="img1"><img class="firstimg" src="science_images/10.jpg" />
+             </div>
+             <div class="col-lg-3"> 
+             <a data-toggle="modal" href="#example4" id="img1"><img class="firstimg" src="science_images/11.jpg" > <br><br><br></img>
+             </div>
+           </div>
+          
+           <div class="rows">
+             <div class="col-lg-3">
+             <a data-toggle="modal" href="#example5" id="img1"><img class="firstimg" src="science_images/3.jpg"/>
+             </div>
+             <div class="col-lg-3">        
+             <a data-toggle="modal" href="#example6" id="img1"><img class="firstimg" src="science_images/4.jpg"  /> 
+             </div>
+             <div class="col-lg-3">  
+             <a data-toggle="modal" href="#example7" id="img1"><img class="firstimg" src="science_images/5.jpg" />
+             </div>
+             <div class="col-lg-3"> 
+             <a data-toggle="modal" href="#example8" id="img1"><img class="firstimg" src="science_images/6.jpg"><br><br><br></img>
+             </div>
+           </div>
+
+           <div class="rows">
+             <div class="col-lg-3">
+             <a data-toggle="modal" href="#example9" id="img1"><img class="firstimg" src="science_images/7.jpg"/>
+             </div>
+             <div class="col-lg-3">        
+             <a data-toggle="modal" href="#example10" id="img1"><img class="firstimg" src="science_images/8.jpg"  /> 
+             </div>
+             <div class="col-lg-3">  
+             <a data-toggle="modal" href="#example11" id="img1"><img class="firstimg" src="science_images/9.jpg" />
+             </div>
+             <div class="col-lg-3"> 
+             <a data-toggle="modal" href="#example12" id="img1"><img class="firstimg" src="science_images/12.jpg"></img>
+             </div>
+           </div>
+           
+
+    
+         
+         
+         
+         
+         
+     
+      
+
+<hr>
+<br>
+<br>
+<br>
+
+<div class="footer">
+  <p style=text-align:center;font-size:80%><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Acceptable Use Policy</a> | &copy; 2014 BRS. All Rights Reserved </p>
+</div>
+</div>
+
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.dropdown-toggle').dropdown();
+        });
+</script>
+<script src="valid.js"></script>
+<script src="drop.js"></script>
+
+<script src="twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>
+<script src="twitter-bootstrap-v2/docs/assets/js/bootstrap-carousel.js"></script>
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/jquery.js"></script>  
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-dropdown.js"></script>  
+<script src="/twitter-bootstrap/twitter-bootstrap-v2/docs/assets/js/bootstrap-scrollspy.js"></script> 
+
+
+</body>
+</html>

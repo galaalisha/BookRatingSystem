@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap Project</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <!-- <link href="dist/css/bootstrap.css" rel="stylesheet"> -->
+    
+  <!--  <link href="booststrap/css/bootstrap.min.css" rel="stylesheet">  -->
+   <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+  <!--  <link href="css/bootstrap.min.css" rel="stylesheet">-->
+  <!--  <script src="/scripts/jquery.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+  
+   
+    <style>
+    .firstimg
+    {
+      width:200px;
+      height: 250px;
+    }
+    span
+    {
+    color:black;
+    }
+    .btn-success
+    {
+
+    padding: 8px 28px;
+    font-size: 28px;
+    line-height: normal;
+    border-radius: 18px;
+
+    }
+
+    }
+    
+    .dropdown-toggle
+    {
+      font-size:20px;
+    }
+    .modal
+    {
+      max-height: 61%;
+    }
+   body{
+    background-image: url('yellow2.jpg');
+    background-repeat: repeat;
+   }
+   .ui-tabs .ui-tabs-nav
+{
+background: black;
+}
+ul li a {background-color: white;}
+ul li a:hover {background-color: white ;}
+ul li a:focus {background-color: #FFFF99;}
+
+
+
+    </style>
+
+    </head>
+  <body>
+<a href="logn.html" class="btn btn-danger" style="position:fixed; float:right; right:0px; top:0px">Log Out</a>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="/resources/demos/style.css" />
+<!--<script>
+  $(function() {
+    $("#tabs").tabs();
+      
+    });
+ 
+</script>-->
+
+  <div class="container main-container">
+   <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-nav">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    </div>
+     <div class="collapse navbar-collapse top-nav">
+        <a class="navbar-brand" href="#">Book Rating System</a>
+        
+         
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <!--<input type="text" placeholder="Email" class="form-control">-->
+            </div>
+            <div class="form-group">
+             <!-- <input type="password" placeholder="Password" class="form-control">-->
+            </div>
+            <!--<button type="submit" class="btn btn-success">Sign in</button>-->
+          </form>
+       
+      </div>
+    </nav>
+    <form  name="registration" autocomplete="on" method="get" action=""  >
+          <input style="width: 500px; height: 30px" type="text" name="book" placeholder='Enter the Title of the book' autofocus /><br><br>
+          <span style="font-size:14pt">Rate the book:</span><br>
+          <select name="ratings" >
+            <option>1</option>
+            <option>2</option>
+          </select>
+          <br>
+          <br>
+          <span style="font-size:14pt">Additional Comments:</span><br>
+          <div class="controls">  
+              <textarea placeholder="Enter your comments" class="input-xlarge" id="textarea" rows="4"></textarea>  
+            </div> <br><br>
+            <p align="right">
+            <button type="submit" class="btn btn-success" float="right" height="30px">Continue</button>  </p>
+            
+           
+
+
+      </form>
+  <!--  <div id="tabs" style="background:#8A0000">
+  <ul>
+    <li><a href="#tabs-1">Nunc tincidunt</a></li>
+    <li><a href="#tabs-2">Proin dolor</a></li>
+    <li><a href="#tabs-3">Aenean lacinia</a></li>
+  </ul>
+  <div id="tabs-1">
+    <h2>Book Review</h2><br>
+      <form  name="registration" autocomplete="on" method="get" action=""  >
+          <input style="width: 500px; height: 30px" type="text" name="book" placeholder='Enter the Title of the book' autofocus /><br><br>
+          <span style="font-size:14pt">Rate the book:</span><br>
+          <select name="ratings" >
+            <option>1</option>
+            <option>2</option>
+          </select>
+          <br>
+          <br>
+          <span style="font-size:14pt">Additional Comments:</span><br>
+          <div class="controls">  
+              <textarea placeholder="Enter your comments" class="input-xlarge" id="textarea" rows="4"></textarea>  
+            </div> <br><br>
+            <p align="right">
+            <button type="submit" class="btn btn-success" float="right" height="30px">Continue</button>  </p>
+            
+           
+
+
+      </form>
+
+  </div>
+  <div id="tabs-2">
+    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+</div>-->
+ </div>
+  </body>
+  </html>

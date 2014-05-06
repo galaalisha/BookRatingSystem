@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<title>BootStrap Project</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link href="bootstrap/dist/css/bootstrap.css" rel="stylesheet"> 
+    <link href="bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet"> 
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">  
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+    
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <style>
+    .tab-content
+    {
+    	overflow-x: hidden;
+    	overflow-y: hidden;
+    }
+      body
+    {
+      background-image:url('Untitled.jpg');
+      background-repeat: repeat-x;
+
+    }
+    </style>
+</head>
+<body>
+
+<div class="container main-container">
+   <nav class="navbar navbar-static-top navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".top-nav">
+        <span class="sr-only">Toggle Navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    </div>
+     <div class="collapse navbar-collapse top-nav">
+        <a class="navbar-brand" href="#">Book Rating System</a>
+        
+           <div class="navbar-collapse collapse">
+          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+         <!--     <input type="text" placeholder="Password" name="email" class="form-control">-->
+            </div>
+            <div class="form-group">
+          <!--    <input type="password" placeholder="Password" name="password" class="form-control">-->
+            </div>
+           <!-- <button type="submit" class="btn btn-success">Sign in</button>-->
+          </form>
+        </div>
+    </div>
+</nav>
+<div class="" id="loginModal">
+	<div class="modal-header">
+		
+		<h3>Have an Account?</h3>
+	</div>
+	<div class="modal-body">
+		<div class="well">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+				<li><a href="#create" data-toggle="tab">Create Account</a></li>
+			</ul>
+			<div id="myTabContent" class="tab-content">
+				<div class="tab-pane active in" id="login">
+					<form class="form-horizontal" method="" action="./Form">
+						<label>Email</label>
+						<input type="text" name ="email" class="input-xlarge"><br><br>
+						<label>Password</label>
+						<input type="password" name="password" class="input-xlarge"><br>
+						<br>
+						<button type="submit" class="btn btn-success">Sign in</button>
+					</form>                
+				</div>
+				<div class="tab-pane fade" id="create">
+					<form id="tab" method="post" action="./Form">
+						<label>First Name</label>
+						<input type="text" class="input-xlarge">
+						<label>Last Name</label>
+						<input type="text" class="input-xlarge">
+						<label>Email</label>
+						<input type="text" name ="email" class="input-xlarge">
+						<label>Password</label>
+						<input type="password"  name="password" class="input-xlarge"><br>
+						<label>Confirm Password</label>
+						<input type="password"  class="input-xlarge"><br>
+						<button type="submit" class="btn btn-success">Create Account</button>
+						
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
